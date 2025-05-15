@@ -1,0 +1,58 @@
+import { Product } from '@/types';
+
+export const mockProducts: Product[] = [
+  {
+    id: '1',
+    name: 'Classic T-Shirt',
+    description: 'A comfortable and stylish t-shirt made from 100% cotton.',
+    price: 25.99,
+    imageUrl: 'https://via.placeholder.com/300x300.png?text=Classic+T-Shirt',
+    category: 'Apparel',
+    stock: 100,
+  },
+  {
+    id: '2',
+    name: 'Wireless Headphones',
+    description: 'High-fidelity wireless headphones with noise-cancellation.',
+    price: 149.50,
+    imageUrl: 'https://via.placeholder.com/300x300.png?text=Wireless+Headphones',
+    category: 'Electronics',
+    stock: 50,
+  },
+  {
+    id: '3',
+    name: 'Leather Wallet',
+    description: 'A sleek and durable leather wallet with multiple card slots.',
+    price: 45.00,
+    imageUrl: 'https://via.placeholder.com/300x300.png?text=Leather+Wallet',
+    category: 'Accessories',
+    stock: 75,
+  },
+  {
+    id: '4',
+    name: 'Coffee Maker',
+    description: 'Drip coffee maker with a 12-cup capacity and programmable timer.',
+    price: 79.99,
+    imageUrl: 'https://via.placeholder.com/300x300.png?text=Coffee+Maker',
+    category: 'Home Goods',
+    stock: 30,
+  },
+  {
+    id: '5',
+    name: 'Yoga Mat',
+    description: 'Eco-friendly and non-slip yoga mat for your daily practice.',
+    price: 35.25,
+    imageUrl: 'https://via.placeholder.com/300x300.png?text=Yoga+Mat',
+    category: 'Sports',
+    stock: 60,
+  },
+  {
+    id: '6',
+    name: 'Smartwatch',
+    description: 'Feature-rich smartwatch with fitness tracking and notifications.',
+    price: 199.00,
+    imageUrl: 'https://via.placeholder.com/300x300.png?text=Smartwatch',
+    category: 'Electronics',
+    stock: 40,
+  },
+];
