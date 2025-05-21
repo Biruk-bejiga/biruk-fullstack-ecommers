@@ -16,7 +16,7 @@ const Navbar = () => {
           E-Commerce Site
         </Link>
         <div className="flex items-center">
-          <Link href="/cart" className="mr-6 hover:text-gray-300">
+          <Link href="/cart" className="mr-6 hover:text-gray-300" >
             Cart ({itemCount})
           </Link>
           {currentUser ? (
