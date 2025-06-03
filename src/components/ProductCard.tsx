@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Product } from '@/types';
 import { useCart } from '@/contexts/CartContext';
 
@@ -13,8 +14,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addToCart } = useCart();
 
   return (
-    <div className="border rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
-      <div className="relative w-full h-48 mb-4">
+    <Link href={`/products/${product.id}`}>
+      <div className="border rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
+        <div className="relative w-full h-48 mb-4">
         <Image
           src={product.imageUrl}
           alt={product.name}
@@ -35,7 +37,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       >
         {product.stock === 0 ? 'Out of Stock' : 'Add to Cart'}
       </button>
-    </div>
+      </div>
+    </Link>
   );
 };
 
